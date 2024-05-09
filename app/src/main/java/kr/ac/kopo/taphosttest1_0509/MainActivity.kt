@@ -26,6 +26,10 @@ class MainActivity : TabActivity() {
         tabSpec3.setContent(R.id.shin3)
         tabHost.addTab(tabSpec3)
 
+        var tabSpec4 = tabHost.newTabSpec("fourth").setIndicator("네 번째 탭")
+        tabSpec4.setContent(R.id.po)
+        tabHost.addTab(tabSpec4)
+
         tabHost.currentTab = 1
     }
 }
